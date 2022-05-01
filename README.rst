@@ -1,6 +1,11 @@
 micro:bit and Arduino IDE samples
 ---------------------------------
 
+(These samples are for those who like the *Arduino IDE*. If you prefer
+to use your own stuff and don't favor the *Arduino* compatibility, maybe
+take a look at `wdoekes/microbit-yotta-samples
+<https://github.com/wdoekes/microbit-yotta-samples>`_ instead.)
+
 At `blynkkk legacy bbc micro:bit + arduino-ide
 <https://github.com/blynkkk/docs/blob/main/legacy-platform/legacy-articles/bbc-micro-bit-+-arduino-ide.md>`_
 there is an extensive writeup on programming the *BBC micro:bit* using
@@ -47,11 +52,12 @@ Here, the short summary, when you're using *Ubuntu/Focal*:
   - selected said board, and selected Softdevice *S110*.
 
 - Connect a *micro:bit* using a USB-cable. You should see it show up in
-  an ``lsusb`` listing. If you don't, double check that your cable has
-  data pins::
+  an ``lsusb`` listing::
 
     $ lsusb | grep NXP
     Bus 001 Device 118: ID 0d28:0204 NXP ARM mbed
+
+  If it doesn't show up, double check that your cable has data pins:.
 
 
 This should be sufficient to get the initial samples working.
